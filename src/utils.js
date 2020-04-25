@@ -2,8 +2,8 @@ export const getRandom = max => Math.floor(Math.random() * max)
 
 export const upperCaseFirst = str => str.replace(/^\w/, c => c.toUpperCase())
 
-export const toString = (values, tag) =>
-  values.map(value => (tag ? `<p>${value}</p>` : value)).join('')
+export const getString = (values, tag) =>
+  values.map(value => (tag ? `<p>${val}</p>\n\n` : `${value}\n\n`)).join('')
 
 export const genLine = (phrases, maxLine = 20) => {
   const length = phrases.length
@@ -24,7 +24,7 @@ export const genLine = (phrases, maxLine = 20) => {
   return paragraph
 }
 
-export const genParagraphs = (phrases, number) => {
+export const genParagraphs = (phrases, number = 3) => {
   const paragraph = []
 
   for (let i = 1; i <= number; i++) {

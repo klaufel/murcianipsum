@@ -27,17 +27,9 @@ body {
 @import './components/header/index.scss';
 @import './components/footer/index.scss';
 @import './components/nav/index.scss';
+@import './components/paragraphs/index.scss';
 @import './components/clipboard/index.scss';
 
-.Container {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 24px;
-
-  @media (min-width: 768px) {
-    padding: 0 32px;
-  }
-}
 a {
   color: inherit;
   text-decoration: none;
@@ -47,21 +39,8 @@ label {
   cursor: pointer;
 }
 
-.Wrapper {
-  padding: 32px;
-  background: var(--c-light);
-  border-radius: 8px;
-}
-
 div[role='group'] {
   display: flex;
-}
-
-.Paragraphs p.show-tag::before {
-  content: '<p>';
-}
-.Paragraphs p.show-tag::after {
-  content: '</p>';
 }
 
 label {

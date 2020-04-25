@@ -12,14 +12,6 @@ const Header = () => (
         rel="noopener noreferrer"
       >
         Murcia
-      </a>{' '}
-      por{' '}
-      <a
-        href="https://twitter.com/klaufel"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        @klaufel
       </a>
     </p>
   </footer>

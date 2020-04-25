@@ -9,14 +9,10 @@ const Clipboard = ({value}) => {
   const refInput = useRef()
 
   const handleCopy = () => {
-    const {current} = refInput
-    current.select()
-    current.setSelectionRange(0, 99999)
+    refInput.current.select()
     document.execCommand('copy')
-    if (current.value) {
-      setStatus(true)
-      setTimeout(() => setStatus(false), 1000)
-    }
+    setStatus(true)
+    setTimeout(() => setStatus(false), 1000)
   }
 
   return (
@@ -25,7 +21,7 @@ const Clipboard = ({value}) => {
       <Button size="small" onClick={handleCopy}>
         Copiar
       </Button>
-      <input
+      <textarea
         className={`${baseClass}-input`}
         type="text"
         ref={refInput}

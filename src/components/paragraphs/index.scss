@@ -1,0 +1,15 @@
+.Paragraphs {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+
+  &-wrapper {
+    padding: 32px;
+    background: var(--c-light);
+    border-radius: 8px;
+  }
+}
