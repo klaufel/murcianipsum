@@ -6,9 +6,9 @@ import {phrases} from '../phrases'
 const GlobalContext = React.createContext()
 
 const initialState = {
-  number: 1,
+  number: 3,
   showTag: false,
-  paragraphs: genParagraphs(phrases.random, 1)
+  paragraphs: genParagraphs(phrases.random, 3)
 }
 
 const stateParagraphs = number => genParagraphs(phrases.random, number)
@@ -43,7 +43,7 @@ const GlobalContextProvider = props => {
 }
 
 GlobalContextProvider.propTypes = {
-  children: PT.element
+  children: PT.node
 }
 
 const GlobalContextConsumer = GlobalContext.Consumer

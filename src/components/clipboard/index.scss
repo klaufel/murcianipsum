@@ -1,0 +1,18 @@
+.Clipboard {
+  position: relative;
+  text-align: right;
+
+  &-status {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  &-input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+  }
+}

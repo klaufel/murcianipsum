@@ -1,11 +1,14 @@
 .Nav {
-  padding-bottom: 32px;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
   align-items: center;
 
-  > div {
+  &-item {
     flex: 1 auto;
+    padding: 8px;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }

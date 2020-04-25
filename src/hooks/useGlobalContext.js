@@ -1,8 +1,8 @@
-import React from 'react'
+import {useContext} from 'react'
 import GlobalContext from '../context/globalContext'
 
 const useGlobalContext = () => {
-  const {state, dispatch} = React.useContext(GlobalContext)
+  const {state, dispatch} = useContext(GlobalContext)
   return {state, dispatch}
 }
 

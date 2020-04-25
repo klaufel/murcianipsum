@@ -1,5 +1,8 @@
 import React from 'react'
 import useGlobalContext from '../../hooks/useGlobalContext'
+import Button from '../button'
+
+const baseClass = 'Nav'
 
 const Nav = () => {
   const {state, dispatch} = useGlobalContext()
@@ -15,13 +18,13 @@ const Nav = () => {
   }
 
   return (
-    <nav className="Nav">
-      <div>
+    <nav className={baseClass}>
+      <div className={`${baseClass}-item`}>
         <div role="group" onChange={handleChangeNumbers}>
           <label>
             1
             <br />
-            <input type="radio" id="p1" name="p" value="1" defaultChecked />
+            <input type="radio" id="p1" name="p" value="1" />
           </label>
           <label>
             2
@@ -31,7 +34,7 @@ const Nav = () => {
           <label>
             3
             <br />
-            <input type="radio" id="p1" name="p" value="3" />
+            <input type="radio" id="p1" name="p" value="3" defaultChecked />
           </label>
           <label>
             4
@@ -45,15 +48,15 @@ const Nav = () => {
           </label>
         </div>
       </div>
-      <div>
+      <div className={`${baseClass}-item`}>
         <label>
           Achotemele
           <input type="checkbox" onChange={handleChangeTag} />
         </label>
       </div>
-      <button className="Button" onClick={() => handleGenerate()}>
-        ¡Generar!
-      </button>
+      <div className={`${baseClass}-item`}>
+        <Button onClick={() => handleGenerate()}>¡RANDOM!</Button>
+      </div>
     </nav>
   )
 }

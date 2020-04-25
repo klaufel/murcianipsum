@@ -5,14 +5,22 @@ const baseClass = 'Footer'
 const Header = () => (
   <footer className={baseClass}>
     <p className={`${baseClass}-description`}>
-      Con mucho ❤️ por{' '}
+      Con mucho ❤️ desde{' '}
+      <a
+        href="https://www.murciaturistica.es/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Murcia
+      </a>{' '}
+      por{' '}
       <a
         href="https://twitter.com/klaufel"
         target="_blank"
         rel="noopener noreferrer"
       >
         @klaufel
-      </a>{' '}
+      </a>
     </p>
   </footer>
 )

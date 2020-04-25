@@ -1,0 +1,33 @@
+.Button {
+  --b-button: var(--c-primary);
+  --c-button: var(--c-light);
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 16px 48px;
+  background: var(--b-button);
+  color: var(--c-button);
+  border-radius: 48px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  &--small {
+    --b-button: var(--c-light);
+    --c-button: var(--c-primary);
+    padding: 4px 24px;
+    font-size: 14px;
+    border-color: var(--c-primary);
+  }
+}

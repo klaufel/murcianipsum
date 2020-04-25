@@ -5,6 +5,16 @@
   --c-light: #fffef4;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -13,17 +23,19 @@ body {
   font-size: 22px;
 }
 
-@import './components/header/styles.scss';
-@import './components/footer/styles.scss';
-@import './components/nav/styles.scss';
+@import './components/button/index.scss';
+@import './components/header/index.scss';
+@import './components/footer/index.scss';
+@import './components/nav/index.scss';
+@import './components/clipboard/index.scss';
 
 .Container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 24px;
 
   @media (min-width: 768px) {
-    padding: 32px;
+    padding: 0 32px;
   }
 }
 a {
@@ -37,7 +49,7 @@ label {
 
 .Wrapper {
   padding: 32px;
-  background: white;
+  background: var(--c-light);
   border-radius: 8px;
 }
 
@@ -55,31 +67,6 @@ div[role='group'] {
 label {
   padding-right: 8px;
   display: flex;
-}
-
-.Button {
-  --b-button: var(--c-primary);
-  --c-button: var(--c-light);
-  font-size: 100%;
-  font-family: inherit;
-  border: 0;
-  padding: 16px 48px;
-  background: var(--b-button);
-  color: var(--c-button);
-  border-radius: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  &:hover,
-  &:focus,
-  &:active {
-    outline: none;
-  }
-
-  &:active {
-    transform: scale(0.96);
-  }
 }
 
 label {
