@@ -1,0 +1,11 @@
+.Nav {
+  padding-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+
+  > div {
+    flex: 1 auto;
+  }
+}

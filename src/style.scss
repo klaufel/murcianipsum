@@ -10,27 +10,39 @@ body {
   font-family: 'Nunito', sans-serif;
   background: var(--c-secondary);
   color: var(--c-dark);
-  font-size: 16px;
+  font-size: 22px;
 }
 
-@import '~components/header/styles.scss';
+@import './components/header/styles.scss';
+@import './components/footer/styles.scss';
+@import './components/nav/styles.scss';
 
 .Container {
   max-width: 980px;
   margin: 0 auto;
-  padding: 32px;
+  padding: 24px;
+
+  @media (min-width: 768px) {
+    padding: 32px;
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+label {
+  cursor: pointer;
 }
 
 .Wrapper {
   padding: 32px;
   background: white;
+  border-radius: 8px;
 }
 
 div[role='group'] {
   display: flex;
-}
-p {
-  font-size: 22px;
 }
 
 .Paragraphs p.show-tag::before {
@@ -67,5 +79,34 @@ label {
 
   &:active {
     transform: scale(0.96);
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  background: var(--c-light);
+  border: 2px solid var(--c-dark);
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &[type='radio'],
+  &[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    &:checked {
+      background: var(--c-primary);
+    }
+  }
+
+  &[type='radio'] {
+    border-radius: 50%;
   }
 }

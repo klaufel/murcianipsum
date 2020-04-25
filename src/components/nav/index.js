@@ -17,7 +17,6 @@ const Nav = () => {
   return (
     <nav className="Nav">
       <div>
-        ¿Cuántos quieres?
         <div role="group" onChange={handleChangeNumbers}>
           <label>
             1
@@ -46,10 +45,12 @@ const Nav = () => {
           </label>
         </div>
       </div>
-      <label>
-        Quiero ver el Achotemele
-        <input type="checkbox" onChange={handleChangeTag} />
-      </label>
+      <div>
+        <label>
+          Achotemele
+          <input type="checkbox" onChange={handleChangeTag} />
+        </label>
+      </div>
       <button className="Button" onClick={() => handleGenerate()}>
         ¡Generar!
       </button>

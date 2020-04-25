@@ -1,7 +1,13 @@
 .Header {
   width: 100%;
+  padding-bottom: 32px;
 
   &-title {
-    font-size: 50px;
+    margin: 0;
+    font-size: 32px;
+
+    @media (min-width: 768px) {
+      font-size: 48px;
+    }
   }
 }

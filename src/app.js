@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './components/header'
+import Footer from './components/footer'
 import Nav from './components/nav'
 import Paragraphs from './components/paragraphs'
 import {GlobalContextProvider} from './context/globalContext'
@@ -14,6 +15,7 @@ const App = () => {
         <div className="Wrapper">
           <Paragraphs />
         </div>
+        <Footer />
       </main>
     </GlobalContextProvider>
   )
