@@ -59,35 +59,3 @@ export const phrases = [
   'nos vemos en la catedral',
   'chambi'
 ]
-
-var bananaArray = [
-  'pepete',
-  'aaaaaah',
-  'uuuhhh',
-  'jiji',
-  'hahaha',
-  'jeje',
-  'wiiiii',
-  'bananaaaa',
-  'bappleees',
-  'potatoooo',
-  'para tÃº',
-  'la bodaaa',
-  'poulet tikka masala',
-  'daa',
-  'hana dul sae',
-  'belloo!',
-  'poopayee',
-  'tank yuuu!',
-  'me want bananaaa!',
-  'underweaaar',
-  'bee do bee do bee do',
-  'tulaliloo',
-  'ti aamoo!',
-  'tatata bala tu',
-  'baboiii',
-  'po kass',
-  'gelatooo',
-  'butt',
-  'chasy'
-]
