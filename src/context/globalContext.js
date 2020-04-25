@@ -8,10 +8,10 @@ const GlobalContext = React.createContext()
 const initialState = {
   number: 3,
   showTag: false,
-  paragraphs: genParagraphs(phrases.random, 3)
+  paragraphs: genParagraphs(phrases, 3)
 }
 
-const stateParagraphs = number => genParagraphs(phrases.random, number)
+const stateParagraphs = number => genParagraphs(phrases, number)
 
 const reducer = (state, action) => {
   switch (action.type) {

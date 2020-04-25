@@ -6,7 +6,9 @@ import {getString} from '../../utils'
 const baseClass = 'Paragraphs'
 
 const getHTML = (values, tag) =>
-  values.map(value => <p>{tag ? `<p>${value}</p>` : value}</p>)
+  values.map((value, index) => (
+    <p key={index}>{tag ? `<p>${value}</p>` : value}</p>
+  ))
 
 const Paragraphs = () => {
   const {state} = useGlobalContext()
