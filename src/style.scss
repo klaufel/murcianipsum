@@ -1,0 +1,71 @@
+:root {
+  --c-secondary: #fdd24b;
+  --c-primary: #f3514d;
+  --c-dark: #34111c;
+  --c-light: #fffef4;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: var(--c-secondary);
+  color: var(--c-dark);
+  font-size: 16px;
+}
+
+@import '~components/header/styles.scss';
+
+.Container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.Wrapper {
+  padding: 32px;
+  background: white;
+}
+
+div[role='group'] {
+  display: flex;
+}
+p {
+  font-size: 22px;
+}
+
+.Paragraphs p.show-tag::before {
+  content: '<p>';
+}
+.Paragraphs p.show-tag::after {
+  content: '</p>';
+}
+
+label {
+  padding-right: 8px;
+  display: flex;
+}
+
+.Button {
+  --b-button: var(--c-primary);
+  --c-button: var(--c-light);
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 16px 48px;
+  background: var(--b-button);
+  color: var(--c-button);
+  border-radius: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+}
