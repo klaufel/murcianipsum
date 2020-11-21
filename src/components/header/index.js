@@ -8,7 +8,7 @@ export default function Header() {
     <header className={baseClass}>
       <h1 className={`${baseClass}-title`}>
         <a className={`${baseClass}-link`} href="/">
-          Murcianipsum 🍋
+          🍋 Murcianipsum
         </a>
       </h1>
       <Nav />

@@ -10,7 +10,7 @@ export default function Nav() {
   const handleGenerate = () => dispatch({type: 'GENERATE'})
 
   const handleChangeNumbers = event => {
-    dispatch({type: 'SET_NUMBER', payload: event.target.value})
+    dispatch({type: 'SET_NUMBER', payload: Number(event.target.value)})
   }
 
   const handleChangeTag = () => {
