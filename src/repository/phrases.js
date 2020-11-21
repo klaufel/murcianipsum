@@ -1,4 +1,4 @@
-export const phrases = [
+export default [
   'acho',
   'pijo',
   'chacho',

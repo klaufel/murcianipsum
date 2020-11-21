@@ -1,7 +1,7 @@
 import React from 'react'
 import Clipboard from '../clipboard'
 import useGlobalContext from '../../hooks/useGlobalContext'
-import {getString} from '../../utils'
+import {getString} from '../../repository'
 
 const baseClass = 'Paragraphs'
 

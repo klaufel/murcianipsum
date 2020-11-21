@@ -1,7 +1,7 @@
 import React, {createContext, useReducer} from 'react'
 import PropTypes from 'prop-types'
-import {genParagraphs} from '../utils'
-import {phrases} from '../phrases'
+import {genParagraphs} from '../repository'
+import phrases from '../repository/phrases'
 
 const GlobalContext = createContext()
 
