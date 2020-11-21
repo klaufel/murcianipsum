@@ -1,26 +1,30 @@
 .Header {
-  width: 100%;
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  --p-header: var(--s-md);
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--mx-container);
+  padding: var(--p-header);
+  width: 100%;
 
   @media (min-width: 768px) {
+    --p-header: var(--s-xl) var(--s-md);
     flex-direction: row;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 
   &-title {
+    --fs-title: var(--fs-xl);
+    --lh-title: var(--lh-xl);
     margin: 0;
-    font-size: 32px;
+    font-size: var(--fs-title);
+    line-height: var(--lh-title);
 
     @media (min-width: 768px) {
-      font-size: 48px;
+      --fs-title: var(--fs-xxl);
+      --lh-title: var(--lh-xxl);
     }
   }
 }

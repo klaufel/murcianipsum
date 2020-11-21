@@ -1,15 +1,21 @@
 .Paragraphs {
+  --p-paragraphs: 0 var(--s-md);
   margin: 0 auto;
-  max-width: 980px;
-  padding: 0 24px;
+  max-width: var(--mx-container-inner);
+  padding: var(--p-paragraphs);
 
   @media (min-width: 768px) {
-    padding: 0 32px;
+    --p-paragraphs: 0 var(--s-xl);
   }
 
   &-wrapper {
+    --p-paragraphs-content: var(--s-md);
     background: var(--c-light);
-    border-radius: 8px;
-    padding: 32px;
+    border-radius: var(--br-base);
+    padding: var(--p-paragraphs-content);
+
+    @media (min-width: 768px) {
+      --p-paragraphs-content: var(--s-xl);
+    }
   }
 }

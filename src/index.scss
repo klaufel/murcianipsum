@@ -10,6 +10,38 @@
   --c-light: #fffef4;
   --c-primary: #f3514d;
   --c-secondary: #fdd24b;
+
+  --ff-base: 'Nunito', sans-serif;
+
+  --mx-container: 1240px;
+  --mx-container-inner: 980px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --fs-xs: 14px;
+  --lh-xs: 20px;
+  --fs-sm: 16px;
+  --lh-sm: 22px;
+  --fs-md: 18px;
+  --lh-md: 24px;
+  --fs-lg: 20px;
+  --lh-lg: 26px;
+  --fs-xl: 32px;
+  --lh-xl: 36px;
+  --fs-xxl: 48px;
+  --lh-xxl: 56px;
+
+  --bw-base: 2px;
+  --br-base: 8px;
+
+  --s-xs: 4px;
+  --s-sm: 8px;
+  --s-md: 16px;
+  --s-lg: 24px;
+  --s-xl: 32px;
+  --s-xxl: 40px;
+  --s-xxxl: 48px;
 }
 
 html {
@@ -23,11 +55,19 @@ html {
 }
 
 body {
+  --fs-body: var(--fs-sm);
+  --lh-body: var(--lh-sm);
   background: var(--c-secondary);
   color: var(--c-dark);
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
+  font-family: var(--ff-base);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   margin: 0;
+
+  @media (min-width: 768px) {
+    --fs-body: var(--fs-lg);
+    --lh-body: var(--lh-lg);
+  }
 }
 
 a {
@@ -46,13 +86,13 @@ div[role='group'] {
 label {
   align-items: center;
   display: flex;
-  padding-right: 8px;
+  padding-right: var(--s-sm);
 }
 
 input {
   appearance: none;
   background: var(--c-light);
-  border: 2px solid var(--c-dark);
+  border: var(--bw-base) solid var(--c-dark);
   cursor: pointer;
 
   &:active,
@@ -61,8 +101,9 @@ input {
   }
   &[type='radio'],
   &[type='checkbox'] {
-    height: 24px;
-    width: 24px;
+    --size-input: var(--s-lg);
+    height: var(--size-input);
+    width: var(--size-input);
 
     &:checked {
       background: var(--c-primary);

@@ -1,6 +1,12 @@
 .Footer {
-  font-size: 16px;
-  padding: 16px;
+  --p-footer: var(--s-sm);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-sm);
+  padding: var(--p-footer);
   text-align: center;
   width: 100%;
+
+  @media (min-width: 768px) {
+    --p-footer: var(--s-md);
+  }
 }
