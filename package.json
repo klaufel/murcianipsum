@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@s-ui/lint": "^3.25.0",
-    "parcel-bundler": "^1.12.4",
+    "parcel": "^1.12.4",
     "sass": "^1.29.0"
   },
   "dependencies": {
