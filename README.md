@@ -5,5 +5,5 @@
 <p align="center"><a href="https://murcianipsum.vercel.app/">Generate your murcianipsum text!</a></p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/1427623/99883341-186bd980-2c27-11eb-98e5-c242ff3660dc.png" alt="Murcianipsum" />
+  <img src="https://user-images.githubusercontent.com/1427623/99887717-df436180-2c46-11eb-8432-25313a21ea5c.png" alt="Murcianipsum" />
 </p>
