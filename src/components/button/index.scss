@@ -1,17 +1,22 @@
 .Button {
   --b-button: var(--c-primary);
   --c-button: var(--c-light);
+  --p-button: var(--s-sm) var(--s-lg);
   background: var(--b-button);
-  border-radius: 48px;
+  border-radius: var(--s-xxxl);
   border: 0;
-  border: 2px solid transparent;
+  border: var(--bw-base) solid transparent;
   color: var(--c-button);
   cursor: pointer;
   font-family: inherit;
-  font-size: 100%;
-  font-weight: 700;
-  padding: 16px 48px;
+  font-size: inherit;
+  font-weight: var(--fw-bold);
+  padding: var(--p-button);
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    --p-button: var(--s-md) var(--s-xxxl);
+  }
 
   &:hover,
   &:focus,
@@ -26,8 +31,9 @@
   &--small {
     --b-button: var(--c-light);
     --c-button: var(--c-primary);
+    --p-button: var(--s-xs) var(--s-lg);
     border-color: var(--c-primary);
-    font-size: 14px;
-    padding: 4px 24px;
+    font-size: var(--fs-sm);
+    line-height: var(--lh-sm);
   }
 }

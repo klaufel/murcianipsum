@@ -2,6 +2,14 @@ import React from 'react'
 import useGlobalContext from '../../hooks/useGlobalContext'
 import Button from '../button'
 
+const SIZES = [
+  {value: '1'},
+  {value: '2'},
+  {value: '3', checked: true},
+  {value: '4'},
+  {value: '5'}
+]
+
 const baseClass = 'Nav'
 
 export default function Nav() {
@@ -19,34 +27,23 @@ export default function Nav() {
 
   return (
     <nav className={baseClass}>
-      <div className={`${baseClass}-item`}>
-        <div role="group" onChange={handleChangeNumbers}>
+      <div
+        className={`${baseClass}-item`}
+        role="group"
+        onChange={handleChangeNumbers}
+      >
+        {SIZES.map(({value, checked}) => (
           <label>
-            1
-            <br />
-            <input type="radio" id="p1" name="p" value="1" />
+            {value}
+            <input
+              defaultChecked={checked}
+              id={`p${value}`}
+              name="p"
+              type="radio"
+              value={value}
+            />
           </label>
-          <label>
-            2
-            <br />
-            <input type="radio" id="p1" name="p" value="2" />
-          </label>
-          <label>
-            3
-            <br />
-            <input type="radio" id="p1" name="p" value="3" defaultChecked />
-          </label>
-          <label>
-            4
-            <br />
-            <input type="radio" id="p1" name="p" value="4" />
-          </label>
-          <label>
-            5
-            <br />
-            <input type="radio" id="p1" name="p" value="5" />
-          </label>
-        </div>
+        ))}
       </div>
       <div className={`${baseClass}-item`}>
         <label>

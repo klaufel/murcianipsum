@@ -4,15 +4,16 @@
 
   &-status {
     display: inline-block;
-    margin-right: 8px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    line-height: var(--lh-xs);
+    margin-right: var(--s-xs);
   }
 
   &-input {
-    opacity: 0;
-    position: absolute;
     left: 0;
+    opacity: 0;
     pointer-events: none;
+    position: absolute;
   }
 }

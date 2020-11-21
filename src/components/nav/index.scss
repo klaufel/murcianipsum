@@ -4,8 +4,10 @@
   flex-wrap: wrap;
 
   &-item {
+    display: flex;
+    justify-content: space-around;
     flex: 1 auto;
-    padding: 8px;
+    padding: var(--s-sm);
 
     &:last-child {
       padding-right: 0;
