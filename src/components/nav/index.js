@@ -4,7 +4,7 @@ import Button from '../button'
 
 const baseClass = 'Nav'
 
-const Nav = () => {
+export default function Nav() {
   const {state, dispatch} = useGlobalContext()
 
   const handleGenerate = () => dispatch({type: 'GENERATE'})
@@ -60,5 +60,3 @@ const Nav = () => {
     </nav>
   )
 }
-
-export default Nav

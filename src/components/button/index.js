@@ -1,5 +1,5 @@
 import React from 'react'
-import PT from 'prop-types'
+import PropTypes from 'prop-types'
 
 const baseClass = 'Button'
 
@@ -13,8 +13,8 @@ const Button = ({children, size, ...props}) => {
 }
 
 Button.propTypes = {
-  children: PT.string,
-  size: PT.oneOf(['small'])
+  children: PropTypes.string,
+  size: PropTypes.oneOf(['small'])
 }
 
 export default Button

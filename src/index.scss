@@ -1,8 +1,15 @@
+@import './components/button/index.scss';
+@import './components/clipboard/index.scss';
+@import './components/footer/index.scss';
+@import './components/header/index.scss';
+@import './components/nav/index.scss';
+@import './components/paragraphs/index.scss';
+
 :root {
-  --c-secondary: #fdd24b;
-  --c-primary: #f3514d;
   --c-dark: #34111c;
   --c-light: #fffef4;
+  --c-primary: #f3514d;
+  --c-secondary: #fdd24b;
 }
 
 html {
@@ -16,19 +23,12 @@ html {
 }
 
 body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
   background: var(--c-secondary);
   color: var(--c-dark);
+  font-family: 'Nunito', sans-serif;
   font-size: 22px;
+  margin: 0;
 }
-
-@import './components/button/index.scss';
-@import './components/header/index.scss';
-@import './components/footer/index.scss';
-@import './components/nav/index.scss';
-@import './components/paragraphs/index.scss';
-@import './components/clipboard/index.scss';
 
 a {
   color: inherit;
@@ -44,17 +44,13 @@ div[role='group'] {
 }
 
 label {
-  padding-right: 8px;
+  align-items: center;
   display: flex;
+  padding-right: 8px;
 }
 
-label {
-  display: flex;
-  align-items: center;
-}
 input {
   appearance: none;
-  -webkit-appearance: none;
   background: var(--c-light);
   border: 2px solid var(--c-dark);
   cursor: pointer;
@@ -65,8 +61,9 @@ input {
   }
   &[type='radio'],
   &[type='checkbox'] {
-    width: 24px;
     height: 24px;
+    width: 24px;
+
     &:checked {
       background: var(--c-primary);
     }

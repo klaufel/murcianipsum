@@ -4,7 +4,7 @@ import PT from 'prop-types'
 
 const baseClass = 'Clipboard'
 
-const Clipboard = ({value}) => {
+export default function Clipboard({value}) {
   const [status, setStatus] = useState(false)
   const refInput = useRef()
 
@@ -35,5 +35,3 @@ const Clipboard = ({value}) => {
 Clipboard.propTypes = {
   value: PT.string
 }
-
-export default Clipboard

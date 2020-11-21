@@ -1,5 +1,5 @@
 import React from 'react'
-import PT from 'prop-types'
+import PropTypes from 'prop-types'
 import {genParagraphs} from '../utils'
 import {phrases} from '../phrases'
 
@@ -43,7 +43,7 @@ const GlobalContextProvider = props => {
 }
 
 GlobalContextProvider.propTypes = {
-  children: PT.node
+  children: PropTypes.node
 }
 
 const GlobalContextConsumer = GlobalContext.Consumer
