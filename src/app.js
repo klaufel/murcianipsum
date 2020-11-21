@@ -5,7 +5,7 @@ import Paragraphs from './components/paragraphs'
 import {GlobalContextProvider} from './context/globalContext'
 import './index.scss'
 
-const App = () => {
+export default function App() {
   return (
     <GlobalContextProvider>
       <Header />
@@ -14,5 +14,3 @@ const App = () => {
     </GlobalContextProvider>
   )
 }
-
-export default App

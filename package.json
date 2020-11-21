@@ -20,13 +20,13 @@
     "extends": "./node_modules/@s-ui/lint/stylelint.config.js"
   },
   "devDependencies": {
-    "@s-ui/lint": "^3.14.0",
+    "@s-ui/lint": "^3.25.0",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.5"
+    "sass": "^1.29.0"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

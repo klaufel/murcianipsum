@@ -1,9 +1,7 @@
 import {useContext} from 'react'
 import GlobalContext from '../context/globalContext'
 
-const useGlobalContext = () => {
+export default function useGlobalContext() {
   const {state, dispatch} = useContext(GlobalContext)
   return {state, dispatch}
 }
-
-export default useGlobalContext

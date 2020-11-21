@@ -1,6 +1,6 @@
 .Paragraphs {
-  max-width: 980px;
   margin: 0 auto;
+  max-width: 980px;
   padding: 0 24px;
 
   @media (min-width: 768px) {
@@ -8,8 +8,8 @@
   }
 
   &-wrapper {
-    padding: 32px;
     background: var(--c-light);
     border-radius: 8px;
+    padding: 32px;
   }
 }

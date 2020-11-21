@@ -4,13 +4,13 @@ import Button from '../button'
 
 const baseClass = 'Nav'
 
-const Nav = () => {
+export default function Nav() {
   const {state, dispatch} = useGlobalContext()
 
   const handleGenerate = () => dispatch({type: 'GENERATE'})
 
   const handleChangeNumbers = event => {
-    dispatch({type: 'SET_NUMBER', payload: event.target.value})
+    dispatch({type: 'SET_NUMBER', payload: Number(event.target.value)})
   }
 
   const handleChangeTag = () => {
@@ -60,5 +60,3 @@ const Nav = () => {
     </nav>
   )
 }
-
-export default Nav

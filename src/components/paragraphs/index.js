@@ -10,7 +10,7 @@ const getHTML = (values, tag) =>
     <p key={index}>{tag ? `<p>${value}</p>` : value}</p>
   ))
 
-const Paragraphs = () => {
+export default function Paragraphs() {
   const {state} = useGlobalContext()
   const {paragraphs, showTag} = state
 
@@ -25,5 +25,3 @@ const Paragraphs = () => {
     </main>
   )
 }
-
-export default Paragraphs

@@ -1,10 +1,10 @@
 import React, {useRef, useState} from 'react'
+import PropTypes from 'prop-types'
 import Button from '../button'
-import PT from 'prop-types'
 
 const baseClass = 'Clipboard'
 
-const Clipboard = ({value}) => {
+export default function Clipboard({value}) {
   const [status, setStatus] = useState(false)
   const refInput = useRef()
 
@@ -33,7 +33,5 @@ const Clipboard = ({value}) => {
 }
 
 Clipboard.propTypes = {
-  value: PT.string
+  value: PropTypes.string
 }
-
-export default Clipboard

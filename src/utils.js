@@ -1,3 +1,5 @@
+const DEFAULT_PARAGRAPHS = 3
+
 export const getRandom = max => Math.floor(Math.random() * max)
 
 export const upperCaseFirst = str => str.replace(/^\w/, c => c.toUpperCase())
@@ -24,7 +26,7 @@ export const genLine = (phrases, maxLine = 20) => {
   return paragraph
 }
 
-export const genParagraphs = (phrases, number = 3) => {
+export const genParagraphs = (phrases, number = DEFAULT_PARAGRAPHS) => {
   const paragraph = []
 
   for (let i = 1; i <= number; i++) {
