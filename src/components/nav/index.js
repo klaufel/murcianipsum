@@ -33,7 +33,7 @@ export default function Nav() {
         onChange={handleChangeNumbers}
       >
         {SIZES.map(({value, checked}) => (
-          <label>
+          <label key={value}>
             {value}
             <input
               defaultChecked={checked}
