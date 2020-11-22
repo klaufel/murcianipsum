@@ -48,6 +48,7 @@
     margin: var(--m-paragraphs-content);
     max-width: var(--mx-container-inner);
     padding: var(--p-paragraphs-content);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
 
     @media (min-width: 768px) {
       --m-paragraphs-content: var(--s-lg) auto var(--s-xxl);

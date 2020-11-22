@@ -2,10 +2,10 @@
   "name": "murcianipsum",
   "version": "1.0.0",
   "description": "🍋",
-  "main": "src/index.js",
+  "main": "public/index.html",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./"
+    "start": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
