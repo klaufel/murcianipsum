@@ -68,7 +68,6 @@ body {
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   margin: 0;
-  overflow: hidden;
 
   @media (min-width: 768px) {
     --fs-body: var(--fs-lg);
