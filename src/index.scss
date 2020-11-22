@@ -6,15 +6,19 @@
 @import './components/paragraphs/index.scss';
 
 :root {
-  --c-dark: #34111c;
-  --c-light: #fffef4;
+  --c-dark: #000000;
+  --c-light: #ffffff;
+  --c-gray: #f3f4f6;
   --c-primary: #f3514d;
   --c-secondary: #fdd24b;
+  --c-secondary-light: #ffdb67;
 
-  --ff-base: 'Nunito', sans-serif;
+  --ff-base: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
 
   --mx-container: 1240px;
   --mx-container-inner: 980px;
+  --mx-container-huge: 1600px;
 
   --fw-normal: 400;
   --fw-bold: 700;
@@ -34,6 +38,7 @@
 
   --bw-base: 2px;
   --br-base: 8px;
+  --br-lg: 24px;
 
   --s-xs: 4px;
   --s-sm: 8px;
@@ -57,12 +62,13 @@ html {
 body {
   --fs-body: var(--fs-sm);
   --lh-body: var(--lh-sm);
-  background: var(--c-secondary);
+  background: var(--c-light);
   color: var(--c-dark);
   font-family: var(--ff-base);
   font-size: var(--fs-body);
   line-height: var(--lh-body);
   margin: 0;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     --fs-body: var(--fs-lg);
@@ -90,6 +96,7 @@ label {
 }
 
 input {
+  -webkit-appearance: none;
   appearance: none;
   background: var(--c-light);
   border: var(--bw-base) solid var(--c-dark);

@@ -16,11 +16,9 @@ export default function Paragraphs() {
 
   return (
     <main className={baseClass}>
+      <Clipboard value={getString(paragraphs, showTag)} />
       <div className={`${baseClass}-wrapper`}>
-        <Clipboard value={getString(paragraphs, showTag)} />
-        <div className={`${baseClass}-content`}>
-          {getHTML(paragraphs, showTag)}
-        </div>
+        {getHTML(paragraphs, showTag)}
       </div>
     </main>
   )

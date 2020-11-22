@@ -52,7 +52,7 @@ export default function Nav() {
         </label>
       </div>
       <div className={`${baseClass}-item`}>
-        <Button onClick={() => handleGenerate()}>¡RANDOM!</Button>
+        <Button onClick={() => handleGenerate()}>¡GENERAR!</Button>
       </div>
     </nav>
   )

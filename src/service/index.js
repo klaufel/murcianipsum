@@ -24,6 +24,7 @@ export const genPhrase = ({phrases, number = DEFAULT_MAX_PHRASE}) => {
 
   return upperCaseFirst(paragraph)
 }
+
 export const genLine = ({phrases, number = DEFAULT_MAX_LINE}) => {
   let paragraph = ''
 
