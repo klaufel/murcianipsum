@@ -1,0 +1,14 @@
+# Created by Juan Carlos Ruiz with much love!
+
+/* TEAM */
+
+  Frontend developer: Juan Carlos Ruiz
+  Twitter: @klaufel
+  From: Barcelona / Murcia, Spain
+
+
+/* SITE */
+  Language: Spanish
+  Last update: 2020/22/11
+  Standards: React, SASS, Parcel and Vercel to deployment site
+  Software: Visual Studio Code
