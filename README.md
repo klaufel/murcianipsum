@@ -9,3 +9,7 @@
     <img src="https://user-images.githubusercontent.com/1427623/99891065-43295280-2c66-11eb-9c36-4cb0f695bce8.png" alt="Murcianipsum" />
   </a>
 </p>
+
+## License
+
+[MIT License](LICENSE.md) © [Juan Carlos Ruiz](https://github.com/klaufel)
